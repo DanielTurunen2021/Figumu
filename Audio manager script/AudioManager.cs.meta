@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 89658a999442e954c8ea6945bed84871
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - achievement: {fileID: 8300000, guid: ebd71c82268f8c44ca5f424881b5abe3, type: 3}
+  - footgrass: {fileID: 8300000, guid: 890a4eb699d3bfc4280e88ff4c8ea3e0, type: 3}
+  - footsand: {fileID: 8300000, guid: 198d3e1733affab45b7502c55e6bd7f5, type: 3}
+  - footstonea: {fileID: 8300000, guid: 33e67fcf7af50a54487eea69c2e31d97, type: 3}
+  - footwood: {fileID: 8300000, guid: 05e9fdac771676745ad7a3e801b849db, type: 3}
+  - birds: {fileID: 8300000, guid: 9eec37040b9161b46904d43d961a44d4, type: 3}
+  - cavedrip: {fileID: 8300000, guid: 7b8a721a1209cc54e82c3892e5256a1c, type: 3}
+  - seaside: {fileID: 8300000, guid: b04ed8bcd63b69e439cca2915dd852a0, type: 3}
+  - wind: {fileID: 8300000, guid: 7dca51076ff5eb84891bf5942c742bfa, type: 3}
+  - notificationpopup: {fileID: 8300000, guid: e319478d41f33474fb6566aba5d3a887, type: 3}
+  - pressureplate: {fileID: 8300000, guid: be05da315b6b0654596643a0fa461e12, type: 3}
+  - selectmove: {fileID: 8300000, guid: 3aac56b4b5a434f49bfca28bc147e46d, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
