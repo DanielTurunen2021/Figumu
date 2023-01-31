@@ -9,10 +9,12 @@ public class SettingsMenu : MonoBehaviour
     [SerializeField] Dropdown ResolutionDropDown;
     [SerializeField] Slider Musicslider;
     [SerializeField] Slider SFXSlider;
+    private int currentResolutionIndex;
+    private Resolution[] _resolutions;
 
     private void Awake()
     {
-       
+        _resolutions = Screen.resolutions;
         float musicvolume = PlayerPrefs.GetFloat("MusicVol");
         float sfxvolume = PlayerPrefs.GetFloat("SFXVol");
         MainMixer.SetFloat("MusicVolume", musicvolume);
@@ -29,7 +31,7 @@ public class SettingsMenu : MonoBehaviour
         //Creates a list called options
         List<string> options = new List<string>();
 
-        int currentResolutionIndex = 0;
+        currentResolutionIndex = 0;
 
         //Loops through our resolutions array
         for (int i = 0; i < Screen.resolutions.Length; i++)
@@ -51,11 +53,11 @@ public class SettingsMenu : MonoBehaviour
 
         //Sets the value of the dropdown to the resolutionindex that we got in the above if statement.
         ResolutionDropDown.value = currentResolutionIndex;
-
-        PlayerPrefs.SetInt("Resolution", currentResolutionIndex);
-
+        
         //Refreshes the text and image of the currently selected option.
         ResolutionDropDown.RefreshShownValue();
+
+        //PlayerPrefs.SetInt("Resolution", currentResolutionIndex);
     }
 
     //Lets you update the resolution.
@@ -100,4 +102,13 @@ public class SettingsMenu : MonoBehaviour
             Screen.fullScreenMode = FullScreenMode.Windowed;
         }
     }
+
+    private void Start()
+    {
+        
+        SetSFXVolume(SFXSlider.value);
+        SetMusicVolume(Musicslider.value);
+    }
 }
+
+
